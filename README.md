@@ -10,7 +10,7 @@ ubuntu:16.04   | latest      |  chefdf=2.3.4  cloud-sdk/ gcloud=178.0.0 |( [ Doc
 
 
 
-Sugestion of use: 
+How to Use: 
 ```
 $ cd my_dev_code/
 
@@ -21,7 +21,6 @@ $ docker run -it --name chef_playground \
     petersonwsantos/chefdk_kitchen-google
 ```
 Explanation command above:
-
 
    creates a volume for my gcloud credentials created earlier in my notebook.
    ```
@@ -37,8 +36,7 @@ Explanation command above:
 ```
 
 
-
-Example of file:  .kitchen.yml
+.kitchen.yml
 
 ```yaml 
 ---
