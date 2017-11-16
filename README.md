@@ -8,6 +8,8 @@ Base Image    |     Tag     |  Backed |  Dockerfile      |  Status
 ------------|-------------|--------|------------------|-------------------------------------
 ubuntu:16.04   | latest      |  chefdf=2.3.4  cloud-sdk/ gcloud=178.0.0 |( [ Dockerfile ](https://github.com/petersonwsantos/chefdk_kitchen-google/blob/master/Dockerfile) ) | [![](https://images.microbadger.com/badges/image/petersonwsantos/chefdk_kitchen-google.svg)](https://microbadger.com/images/petersonwsantos/chefdk_kitchen-google "Get your own image badge on microbadger.com")
 
+
+
 Sugestion of use: 
 ```
 $ cd my_dev_code/
@@ -18,7 +20,7 @@ $ docker run -it --name chef_playground \
    --mount type=bind,source="$(pwd)",target=/cookbook \
     petersonwsantos/chefdk_kitchen-google
 ```
-Explanation code above:
+Explanation command above:
 
 create volume for  gcloud credencials directory 
 ```
@@ -35,8 +37,7 @@ mount volume for your cookbooks's code
 
 
 
-Example:
-.kitchen.yml
+Example of file:  .kitchen.yml
 
 ```yaml 
 ---
