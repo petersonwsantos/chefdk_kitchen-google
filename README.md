@@ -22,15 +22,17 @@ $ docker run -it --name chef_playground \
 ```
 Explanation command above:
 
-   creates a volume for my gcloud credentials created earlier in my notebook.
+   Creates a volume for my gcloud credentials created earlier in my notebook.
+   If you prefer you can take this line and run "gcloud init" directly in the container.
    ```
     -v ~/.config/gcloud:/root/.config/gcloud \
    ```
-   create volume for key(key_google_compute_engine) used in .kitchen.yml .
+   Creates volume for my authentication key, that will be used in ".kitchen.yml"
+   ( ssh_key:~/.ssh/key_google_compute_engine).
    ```
     -v ~/.ssh:/root/.ssh \
    ```
-   mount volume for my cookbooks's code    
+   Mount volume for my cookbooks's code ( $ cd my_dev_code/ ).    
    ```
    --mount type=bind,source="$(pwd)",target=/cookbook \
 ```
