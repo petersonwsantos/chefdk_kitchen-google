@@ -46,8 +46,8 @@ verifier:
 transport:
   # Google Cloud Plataform - Enter Compute Engine / Metadata / add USER and SSH KEY    <------------------------------------
   # User
-  username: login_key
-  # Key (path public Key)
+  username: login_of_metadata_key
+  # Key 
   ssh_key:
     - ~/.ssh/key_google_compute_engine
 
@@ -61,12 +61,5 @@ platforms:
         release: a
         version: 1604
 
-suites:
-  - name: default
-    run_list:
-      - recipe[apache::default]
-    verifier:
-      inspec_tests:
-        - test/recipes
-    attributes:
+
 ```
