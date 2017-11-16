@@ -1,8 +1,8 @@
 FROM ubuntu:16.04
 
 LABEL maintainer="peterson W Santos <opeterson@hotmail.com>"
-LABEL chefdf.version="178.0.0"
-LABEL gcloud.version=""
+LABEL chefdf.version="2.3.4"
+LABEL gcloud.version="178.0.0"
 LABEL tag="1.0"
 
 ENV DEBIAN_FRONTEND noninteractive
