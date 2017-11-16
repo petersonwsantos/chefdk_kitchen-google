@@ -24,15 +24,14 @@ Explanation command above:
    ```
     -v ~/.config/gcloud:/root/.config/gcloud \
 
-      Creates a volume for my gcloud credentials created earlier in my notebook.
-      If you prefer you can take this line and run "gcloud init" directly in the container.
+      # Creates a volume for my gcloud credentials created earlier in my notebook. If you prefer you can take this line and run "gcloud init" directly in the container.
    ```
   
   
    ```
     -v ~/.ssh:/root/.ssh \
 `
-      Creates volume for my authentication key, that will be used in ".kitchen.yml"
+      # Creates volume for my authentication key, that will be used in ".kitchen.yml"
       ( ssh_key:~/.ssh/key_google_compute_engine).
    ```
 
@@ -40,7 +39,7 @@ Explanation command above:
    ```
    --mount type=bind,source="$(pwd)",target=/cookbook \
 
-      Mount volume for my cookbooks's code ( $ cd my_dev_code/ ).    
+      # Mount volume for my cookbooks's code ( $ cd my_dev_code/ ).    
    ```
 
 
